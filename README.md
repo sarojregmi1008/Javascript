@@ -130,7 +130,7 @@ function outerFunction() {
 const inner = outerFunction(); // calls `outerFunction`, which returns `innerFunction` and assigns it to the `inner` variable
 innerFunction(); // calls `innerFunction`, which logs the value of `outerVariable`
 ```
-In this example, innerFunction is defined inside outerFunction, which means it has access to the outerVariable that is defined in the outer function's scope. When innerFunction is returned from outerFunction and assigned to the inner variable, it forms a closure that includes both the function and its environment. When inner is called, it logs the value of outerVariable, even though that variable is not directly accessible outside of outerFunction.
+In this example, <strong>innerFunction</strong> is defined inside <strong>outerFunction</strong>, which means it has access to the <strong>outerVariable</strong> that is defined in the outer function's <strong>scope</strong>. When <strong>innerFunction</strong> is returned from outerFunction and assigned to the inner variable, it forms a <strong>Closure</strong> that includes both the function and its environment. When <strong>innerFunction</strong> is called, it logs the value of outerVariable, even though that variable is not directly accessible outside of <strong>outerFunction</strong>.
 
 In a <strong>Closure</strong>, <strong>free variables</strong> are the variables that are defined outside the inner function, but are accessible within it due to the closure's scope. The inner function can access the free variables and their values at the time the closure was created. <strong>Free Variable</strong> is
 ```
